@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Este es cabezal del documento -->
+    <title>Portfolio A+</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="contenedor header">
+        <a href="index.html" class="logo">
+            <img src="https://placeimg.com/100/100/any" />
+        </a>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i> About</a>
+                </li>
+                <li>
+                    <a href="work.html">Work
+                    </a>
+                </li>
+                <li>
+                    <a href="labs.html">Labs</a>
+                </li>
+                <li class="active">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="redes-sociales">
+            <li>
+                <a href="http://facebook.com">
+                    <i class="fab fa-facebook facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://instagram.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main class="contenedor main">
+        <section>
+            <form class="formulario" id="formulario" method="POST" action="https://mailthis.to/DiMaNacho">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" value="Menganito" placeholder="Ingrese su nombre..." required />
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="_replyto" placeholder="Ingrese su correo..." required />
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" placeholder="Ingrese su edad..." id="edad" name="edad" />
+                </div>
+                <div>
+                    Sexo
+                    <br />
+                    <div>
+                        <input type="radio" value="hombre" id="hombre" name="sexo" />
+                        <label for="hombre">Hombre</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="mujer" id="mujer" name="sexo" />
+                        <label for="mujer">Mujer</label>
+                    </div>
+                </div>
+                <div>
+                    Intereses
+                    <br />
+                    <div>
+                        <input type="checkbox" value="diseno" id="disenio" name="intereses" />
+                        <label for="disenio">Diseño</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="programacion" id="programacion" name="intereses" />
+                        <label for="programacion">Programación</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="fechadenacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fechadenacimiento" name="fechadenacimiento" />
+                </div>
+                <div>
+                    <label for="departamentovive">Departamento que vive</label>
+                    <select id="departamentovive" name="departamentovive">
+                        <option value="0" disabled selected>Seleccioná una opción</option>
+                        <option value="montevideo">Montevideo</option>
+                        <option value="canelones">Canelones</option>
+                        <option value="tacuarembo">Tacuarembó</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="departamentovivio">Departamento que vivió</label>
+                    <select id="departamentovivio" name="departamentovivio" multiple>
+                        <option value="montevideo">Montevideo</option>
+                        <option value="canelones">Canelones</option>
+                        <option value="tacuarembo">Tacuarembó</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Completar" />
+                </div>
+
+                <input type="hidden" name="_subject" value="Te llegó un hermoso mail" />
+                <input type="hidden" name="_after" value="http://google.com" />
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

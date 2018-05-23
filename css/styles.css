@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+  }
+  body {
+    background: rgb(36, 5, 105);
+    color: #fff;
+    margin: 0;
+    font-size: 0;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: underline fuchsia;
+  }
+  .contenedor {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .header {
+    width: 20%;
+  }
+  .main {
+    width: 80%;
+  }
+  .logo {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: #fff 2px solid;
+    margin: 10% auto;
+  }
+  /* Esto afecta SOLO a la etiqueta IMG */
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .menu ul li {
+    width: 100%;
+    height: 35px;
+  }
+  .menu ul li a {
+    display: block;
+    width: calc(100% - 5px);
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-left: 7px transparent solid;
+  }
+  .menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .menu ul .active a {
+    border-color: fuchsia;
+    color: fuchsia;
+  }
+  
+  .redes-sociales {
+    list-style: none;
+    margin: 100px 0 0;
+    padding: 0;
+    text-align: center;
+  }
+  .redes-sociales li {
+    display: inline-block;
+  }
+  .facebook {
+    color: green;
+  }
+  
+  #formulario {
+  }
+  
